@@ -165,7 +165,7 @@ def get_image(  sheet:pg.Surface, x:int, y:int, width:int, height:int,
         if colorkey:
             image.set_colorkey(colorkey)
         image = pg.transform.scale(image,
-                                   (int(rect.width*scale),
+                                    (int(rect.width*scale),
                                     int(rect.height*scale)))
         return image
 
